@@ -1,0 +1,327 @@
+* {
+    margin: 0px;
+}
+
+header {
+    background-image: url("logo.png");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 4%;
+    height: 180px;
+}
+
+.iframePrincipal iframe {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+}
+
+iframe {
+    border: none;
+}
+
+nav {
+    float: right;
+    margin: 20px;
+}
+
+nav ul {
+    vertical-align: bottom;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    font-family: "Trebuchet MS";
+    border-top: 1px solid #7b3636;
+    padding: 4px 2px;
+}
+
+nav ul li a {
+    color: #eee;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+h4 {
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+section {
+    margin: 2% 5% 0;
+}
+
+figcaption {
+    font-size: 70%;
+    text-align: center;
+    color: transparent;
+}
+
+td:hover figcaption {
+    color: #000;
+}
+
+
+/*#region resumo*/
+
+section.resumo article {
+    float: left;
+    width: 70%;
+}
+
+section.resumo p {
+    text-indent: 2%;
+    text-align: justify;
+    font-size: 135%;
+    line-height: 150%;
+}
+
+section.resumo img {
+    padding: 5% 0 0;
+    width: 25%;
+    float: right;
+    padding-left: 20px;
+}
+
+
+/* #endregion  */
+
+
+/*#region membros */
+
+section.membros table {
+    overflow: hidden;
+    max-width: 100%;
+    margin: auto;
+}
+
+.tabelaMembros {
+    overflow-x: auto;
+}
+
+.tabelaMembros tr {
+    padding: 1%;
+}
+
+.tabelaMembros td {
+    vertical-align: top;
+    overflow: hidden;
+}
+
+
+/*endregion*/
+
+
+/*#region filmes*/
+
+article.filme {
+    width: 44%;
+    float: left;
+    margin: 3%;
+}
+
+.resenhaCritica {
+    margin: 20px 0px;
+    border-bottom: 3px solid #eee;
+    text-align: right;
+}
+
+.resenhaCritica a {
+    color: #000;
+    background: #eee;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.resenhaCritica a:hover {
+    color: #eee;
+    background: #000;
+    padding: 15px;
+    text-decoration: none;
+}
+
+article.filme h3 {
+    text-align: center;
+    text-transform: uppercase;
+    background: #eee;
+    padding: 20px 0;
+    border-left: 71px solid #653715;
+}
+
+article.filme .resumo {
+    margin: 10px 1px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+article.filme .capa {
+    margin: auto;
+    width: 40%;
+    float: left;
+    padding: 0 5% 0 0;
+}
+
+article.filme .capa img {
+    max-width: 100%;
+}
+
+article.filme .personagens {
+    margin: auto;
+    width: 50%;
+    float: right;
+    height: 50%;
+    padding: 1%;
+    background: #000;
+    color: #eee;
+    margin-bottom: 10px;
+}
+
+article.filme .personagens p {
+    text-transform: uppercase;
+    line-height: 150%;
+}
+
+article.filme .personagens h4 {
+    background: #eee;
+    color: #000;
+    padding: 4PX;
+    MARGIN: 3px 0 10px;
+}
+
+article .video {
+    clear: both;
+}
+
+.video iframe {
+    width: 100%;
+    height: 312px;
+    overflow: auto;
+}
+
+
+/*#endregion*/
+
+
+/*#region noticias */
+
+section.noticias ul {
+    list-style: none;
+    width: 88%;
+    padding-left: 10px;
+    margin: auto;
+}
+
+section.noticias li {
+    background: url("icon.png") bottom no-repeat;
+    background-size: 25%;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+section.noticias ul li h3 {
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+}
+
+section.noticias ul li section.dataPublicacao {
+    text-align: right;
+    font-size: 80%;
+}
+
+section.noticias ul li section.linkExterno {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+section.noticias ul li section.linkExterno a {
+    text-transform: none;
+    text-decoration: none;
+    color: #960303;
+    font-size: 110%;
+}
+
+section.noticias ul li h4 {
+    text-decoration: none;
+    text-transform: none;
+    text-align: justify;
+    width: 90%;
+    text-indent: 30px;
+}
+
+
+/*endregion*/
+
+
+/*#region contatos */
+
+section.contato {
+    text-align: center;
+}
+
+.iframeLocalizacao iframe {
+    width: 90%;
+    height: 400px;
+}
+
+section.contato h3 {
+    margin: 10px;
+}
+
+
+/*endregion*/
+
+@media screen and (max-width: 700px) {
+    header {
+        background-size: 30%;
+    }
+    iframe {
+        height: 200px;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    nav ul li {
+        display: block;
+        line-height: 150%;
+    }
+    section.resumo article {
+        float: none;
+        width: 99%;
+    }
+    section.resumo img {
+        width: 100%;
+        float: none;
+        margin: auto;
+        padding: 0;
+    }
+    article.filme {
+        width: 93%;
+        float: none;
+        margin: 3%;
+    }
+    section.noticias li {
+        background: url("icon.png") bottom no-repeat;
+        background-size: 55%;
+        padding-bottom: 40px;
+        margin-bottom: 30px;
+    }
+    section.noticias ul {
+        padding-left: 0px;
+    }
+    section.noticias ul li h4 {
+        width: 100%;
+        margin: 10px auto;
+    }
+}
