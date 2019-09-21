@@ -282,6 +282,26 @@ section.contato h3 {
 
 /*endregion*/
 
+
+/*region #jogo */
+
+section#jogoMemoria {
+    background: #000;
+}
+
+section#jogoMemoria .membros {
+    float: left;
+    width: 21%;
+    margin: 2%;
+}
+
+section#jogoMemoria .membros img {
+    width: 100%;
+}
+
+
+/*endregion */
+
 @media screen and (max-width: 700px) {
     header {
         background-size: 30%;
