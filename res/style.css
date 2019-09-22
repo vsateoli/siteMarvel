@@ -286,12 +286,13 @@ section.contato h3 {
 /*region #jogo */
 
 section#jogoMemoria {
-    background: #000;
+    width: 70%;
+    margin: auto;
 }
 
 section#jogoMemoria .membros {
     float: left;
-    width: 21%;
+    width: 16%;
     margin: 2%;
 }
 
