@@ -15,6 +15,7 @@ header {
     width: 100%;
     border: none;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 iframe {
@@ -286,18 +287,51 @@ section.contato h3 {
 /*region #jogo */
 
 section#jogoMemoria {
-    width: 70%;
-    margin: auto;
+    width: 80%;
+    margin: 10px auto 30px;
 }
 
 section#jogoMemoria .membros {
-    float: left;
-    width: 16%;
-    margin: 2%;
+    display: inline-block;
+    width: 12%;
+    margin: 1%;
+    background: url(bg.jpg) #111;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 section#jogoMemoria .membros img {
     width: 100%;
+    opacity: 0;
+}
+
+footer {
+    position: fixed;
+    z-index: 1000;
+    color: #fff;
+    background-color: #000;
+    bottom: 0px;
+    padding: 1px 0px;
+    width: 100%;
+}
+
+#mensagemErro {
+    display: inline;
+}
+
+.barraRodape {
+    float: right;
+    margin: 0px 20px;
+}
+
+#ranking {
+    position: fixed;
+    bottom: 40px;
+    background: #000;
+    display: none;
+    right: 10px;
+    padding: 10px;
 }
 
 
@@ -306,9 +340,10 @@ section#jogoMemoria .membros img {
 @media screen and (max-width: 700px) {
     header {
         background-size: 30%;
+        height: 220px;
     }
     iframe {
-        height: 200px;
+        height: 220px;
     }
     nav {
         margin-top: 10px;
@@ -344,5 +379,11 @@ section#jogoMemoria .membros img {
     section.noticias ul li h4 {
         width: 100%;
         margin: 10px auto;
+    }
+    section#jogoMemoria .membros {
+        display: inline-block;
+        width: 23%;
+        margin: 1%;
+        background-size: 300px;
     }
 }
